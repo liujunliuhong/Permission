@@ -60,16 +60,16 @@ pod 'GLPermission/Calendar'
 如果提示未找到，先执行`pod repo update`，再执行`pod install`。支持`iOS 9.0`以上系统
 
 ## 使用(具体用法请查看Demo，使用方法非常简单)
-以相机来举例子
+以麦克风来举例子
 
-- 获取相机权限
+- 获取麦克风权限
 
 ```
 let authorizationStatus = GLMicrophonePermission.authorizationStatus
 print("麦克风权限状态: \(authorizationStatus.rawValue)")
 ```
 
-- 请求相机权限
+- 请求麦克风权限
 
 ```
 GLMicrophonePermission.requestAuthorization { (authorizationStatus) in
